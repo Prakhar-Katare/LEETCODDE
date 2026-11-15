@@ -8,10 +8,10 @@ public class MinStack {
         minStack = new Stack<>();
     }
     
-    public void push(int val) {
-        stack.push(val);
-        if (minStack.isEmpty() || val <= minStack.peek()) {
-            minStack.push(val);
+    public void push(int value) {
+        stack.push(value);
+        if (minStack.isEmpty() || value <= minStack.peek()) {
+            minStack.push(value);
         }
     }
     
